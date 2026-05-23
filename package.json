@@ -1,0 +1,33 @@
+{
+	"name": "@ricoyudog/pi-goal-hermes",
+	"version": "0.1.0",
+	"description": "Goal-driven autonomous continuation for Pi coding agent - set a goal and let the agent work until done, with LLM-based judge evaluation",
+	"type": "module",
+	"keywords": ["pi-package", "pi", "extension", "goal", "autonomous", "continuation", "agent"],
+	"license": "MIT",
+	"author": "ricoyudog",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ricoyudog/pi-goal-hermes.git"
+	},
+	"homepage": "https://github.com/ricoyudog/pi-goal-hermes#readme",
+	"bugs": {
+		"url": "https://github.com/ricoyudog/pi-goal-hermes/issues"
+	},
+	"files": [
+		"index.ts",
+		"goal-manager.ts",
+		"judge-service.ts",
+		"goal-state.ts",
+		"event-renderer.ts",
+		"continuation-prompt.ts"
+	],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}
