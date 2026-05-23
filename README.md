@@ -2,6 +2,10 @@
 
 Goal-driven autonomous continuation extension for [Pi](https://pi.dev). Set a goal and let the agent work autonomously until done, evaluated by a secondary LLM judge.
 
+## Background
+
+This extension is inspired by and ported from [Hermes](https://github.com/anthropics/hermes)'s goal continuation architecture. The core idea -- an LLM judge loop that evaluates progress and decides whether to continue or stop -- is adapted from Hermes's goal system and re-implemented as a native Pi extension using Pi's extension API (custom entries, message renderers, slash commands, and the agent lifecycle hooks).
+
 ## Install
 
 ```bash
